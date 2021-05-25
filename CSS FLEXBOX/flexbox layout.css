@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+body{
+     display: flex;
+     flex-direction: column;
+      margin:0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+        text-decoration: none
+}
+
+header{
+    background: #698137;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header a{
+    color: #fff ;
+}
+#logo{
+    margin: 0 auto;
+    font-size: 25px;
+}  
+#menu li{
+ padding: 10px;
+}
+#social-links li{
+    padding: 10px;
+}
+#main{
+    display: flex;
+    padding: 10px;
+}
+aside ul{
+    list-style-type: none;
+    padding: 0;
+}
+aside ul a{
+    color:#698137 ;
+    padding: 10px;
+    display: block;
+    border-bottom:1px solid gray;
+}
+aside img{
+    width: 100%;
+    height: auto ;
+}
+article{
+    padding: 10px;
+}
+aside{
+    padding: 15px;
+    flex: 0 0 20vw;
+    background: beige;
+}
+.service-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.servicebox{
+    border: 1px solid #eee;
+    flex-basis: 32%;
+    padding: 10px;
+    max-width:370px ;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;  
+}
+.servicebox h3{
+    margin: 5px 0 10px;
+}
+.servicebox p{
+    margin: 0 0 10px;
+}
+.servicebox img{
+    width: 100%;
+}
+footer{
+    background:#698137 ;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+.call-to-action a{
+  background: grey;
+  color: #fff;
+  padding: 8px 13px ;
+  border: 2px solid transparent;
+  display: block;
+}
+.call-to-action {
+    align-self: flex-start;
+    margin-top: auto;
+    display: block;
+    
+}
+.call-to-action a:hover{
+    color: gray;
+    background: transparent;
+    border:  2px solid gray;
+}
+
+@media screen and (max-width:950px){
+    .servicebox{
+      
+        flex-basis: 45%;
+  
+        max-width:370px ;
+    }
+   
+    aside{
+        
+        flex: 0 0 30vw;
+
+    }
+
+}
+
+@media screen and (max-width:550px){
+    .servicebox{
+      
+        flex-basis: 80%;
+  
+        max-width:370px ;
+    }
+   
+    aside{
+        
+        flex: 0 0 30vw;
+
+    }
+
+}
+
+
+
+@media screen and (max-width:494px){
+ header{
+     flex-direction: column;
+ }
+ #logo{
+     order: -1;
+ }
+ #main{
+     flex-direction: column;
+ }
+ article{
+     order: -1;
+ }
+.service-container{
+    flex-direction: column;
+    align-items: center;
+} 
+h2{
+    text-align: center;
+}
+
+}

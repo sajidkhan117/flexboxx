@@ -1,0 +1,14 @@
+.container{
+    border: 3px solid red;
+   
+}
+.header{
+    height: 500px;
+    display: grid;
+    
+    grid-template-rows: repeat(2,150px);
+    grid-template-columns:   repeat(7,150px);
+    align-items: flex-start;
+       
+    
+}

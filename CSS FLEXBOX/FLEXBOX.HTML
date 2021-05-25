@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX 20 MINUTES</title>
+    <style>
+       @media(min-width: 50px) 
+       {
+                .container{
+                display: flex;
+                                 }
+        
+        
+                 .container div{
+                 border:  1px solid #ccc;
+                  padding: 10px;
+
+                                 }
+        }
+
+        .container{
+            display: flex;
+        }
+        
+        
+        .container div{
+            border:  1px solid #ccc;
+            padding: 10px;
+
+        }
+        .box1{
+           flex: 2;
+           order: 2;
+        }
+        .box2{
+            flex: 1;
+            order: 1;
+        }
+        .box3{
+            flex:1;
+            order: 3;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <DIV class="container"> 
+        <div class="box1">
+            <h3>box1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, dignissimos.</p>
+
+        </div>
+
+        <div class="box2">
+            <h3>box2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, asperiores.</p>
+
+        </div> 
+
+        <div class="box3">
+            <h3>box3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magnam.</p>
+
+        </div> 
+
+
+
+    </DIV>
+</body>
+</html>
